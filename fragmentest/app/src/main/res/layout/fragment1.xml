@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="프로그래먼트1 입니다"
+        android:textColor="#ffffff"
+        android:textSize="30pt"
+        android:textStyle="bold"/>
+
+</FrameLayout>

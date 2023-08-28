@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/clock"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30pt"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="#ffff00"
+        android:textColor="#ff0000"
+        android:text="0"
+        android:id="@+id/textview1"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="카운터 증가"
+            android:id="@+id/button1"
+            android:backgroundTint="#ff0000"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="카운터 감소"
+            android:id="@+id/button2"
+            android:backgroundTint="#ff0000"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="초기화"
+            android:id="@+id/button3"
+            android:backgroundTint="#ff0000"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

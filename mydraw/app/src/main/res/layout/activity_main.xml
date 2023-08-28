@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <!-- 패키지 이름으로 뷰 불러올수 있다.-->
+
+
+    <com.example.mydraw.SingleTouchView
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/drawing"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/paint_colors"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ff000000"
+            android:onClick="clicked"
+            android:backgroundTint="#ff000000"/>
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ffff0000"
+            android:onClick="clicked"
+            android:backgroundTint="#ffff0000"/>
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ffff6600"
+            android:onClick="clicked"
+            android:backgroundTint="#ffff6600"/>
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ffffcc00"
+            android:onClick="clicked"
+            android:backgroundTint="#ffffcc00"/>
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ff009900"
+            android:onClick="clicked"
+            android:backgroundTint="#ff009900"/>
+
+        <ImageButton
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:tag="#ffffffff"
+            android:onClick="clicked"
+            android:backgroundTint="#ffffffff"/>
+    </LinearLayout>
+</LinearLayout>
